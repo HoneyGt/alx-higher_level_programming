@@ -6,9 +6,7 @@ class Rectangle:
     """Represent a rectangle.
 
     Attributes:
-        number_of_instances: number of Rectangle instances,
-        increments with every instantitation,
-        decrements with every deletion
+        number_of_instances (int): The number of Rectangle instances.
     """
 
     number_of_instances = 0
@@ -19,9 +17,9 @@ class Rectangle:
             width (int): width of the new rectangle.
             height (int): height of the new rectangle.
         """
+        type(self).number_of_instances += 1
         self.width = width
         self.height = height
-        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -90,4 +88,5 @@ class Rectangle:
 
     def __del__(self):
         """Print a message for every deletion of a Rectangle."""
-        print("Bye rectangle...")
+       type(self).number_of_instances -= 1
+       print("Bye rectangle...")
