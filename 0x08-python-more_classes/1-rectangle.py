@@ -8,15 +8,15 @@ class Rectangle:
     def __int__(self, width=0, height=0):
         """Initializes a Rectangle instance.
         Args:
-            height: height of the rectangle
             width: width of the rectangle
+            height: height of the rectangle
         """
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """Retrives the width of a Rectangle instance."""
+        """Retrieves the width of a Rectangle instance."""
         return self._width
 
     @width.setter
@@ -32,8 +32,8 @@ class Rectangle:
         self._width = value
 
     @property
-    def height(self)
-        """Retrives the height of a Rectangle instance."""
+    def height(self):
+        """Retrieves the height of a Rectangle instance."""
         return self._height
 
     @height.setter
