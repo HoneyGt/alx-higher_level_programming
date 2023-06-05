@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""A class Rectangle that defines a rectangle."""
+"""Defines a Rectangle class."""
 
 
 class Rectangle:
-    """Rectangle class defined by width and height."""
+    """Represent a rectangle."""
 
-    def __int__(self, width=0, height=0):
+    def __init__(self, width=0, height=0):
         """Initializes a Rectangle instance.
         Args:
             width (int): width of the new rectangle.
