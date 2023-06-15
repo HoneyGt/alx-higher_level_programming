@@ -1,4 +1,4 @@
-#!/usr/bin/python3 
+#!/usr/bin/python3
 """Defines a class Student."""
 
 
@@ -34,4 +34,4 @@ class Student:
             json (dict): The key/value pairs to replace attributes with.
         """
         for k, v in json.items():
-            setattr(self, k, vi)
+            setattr(self, k, v)
