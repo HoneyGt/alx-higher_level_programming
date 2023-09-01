@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Sends a POST request to a given URL with a given 
-email as a parameter and displays the body 
+Sends a POST request to a given URL with a given
+email as a parameter and displays the body
 of the response (decoded in utf-8)
 """
 import sys
